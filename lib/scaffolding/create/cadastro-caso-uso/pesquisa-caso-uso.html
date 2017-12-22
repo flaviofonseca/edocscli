@@ -1,0 +1,25 @@
+<div ng-controller="PesquisaCasoUso as vm">
+    <pd-pesquisa titulo="Pesquisa de CasoUso">
+        <pd-pesquisa-filter>
+            <div class="row">
+                <pd-input-text
+                        label="Código"
+                        ng-model="vm.pdService.tabela.id"
+                        colspan="3"
+                        tipo="long">
+                </pd-input-text>
+                <pd-input-text
+                        label="Descrição"
+                        ng-model="vm.pdService.tabela.ds"
+                        colspan="3"
+                        tipo="text">
+                </pd-input-text>
+            </div>
+        </pd-pesquisa-filter>
+        <pd-pesquisa-body>
+            <pd-grid init="vm.onConfigurarGrid($gridScope)"
+                     colspan="12">
+            </pd-grid>
+        </pd-pesquisa-body>
+    </pd-pesquisa>
+</div>
