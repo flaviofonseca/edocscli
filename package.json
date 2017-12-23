@@ -1,17 +1,16 @@
 {
-  "version": "0.1.6",
+  "version": "0.1.1",
   "main": "index.js",
-  "bin": "bin/cmd.js",
   "name": "edocscli",
   "author": {
     "name": "Flávio Fonseca Martins",
     "email": "flaviofonse@gmail.com"
   },
   "description": "",
-  "scripts": {
-    "build-source": "node bin/build.js"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviofonseca/edocscli"
   },
-  "repository": "",
   "license": "MIT",
   "dependencies": {
     "camelcase": "^4.0.0",
